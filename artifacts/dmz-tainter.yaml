@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dmz-tainter
+spec:
+  containers:
+  - name: dmz-tainter
+    image: artifact-repository.intra.coop:9443/coop-integration/dmz-tainter:latest
+  serviceAccountName: dmz-tainter
